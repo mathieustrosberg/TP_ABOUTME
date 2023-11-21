@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=League+Gothic&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: #101418;
+  --grey: #181c20;
+  --white: #f8f8f8;
+}
+
+body {
+  background-color: var(--black);
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  height: 100vh;
+  margin: 24px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 6 / 2;
+  width: auto;
+  height: 100vh;
+  background-color: var(--grey);
+  border-radius: 20px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.div2 {
+  grid-area: 1 / 2 / 2 / 4;
+  background-color: var(--grey);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 48px;
+}
+
+.div3 {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: var(--grey);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+}
+
+.div4 {
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: var(--grey);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+}
+
+.div5 {
+  grid-area: 2 / 3 / 3 / 4;
+  width: 100%;
+
+  background-color: var(--grey);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+}
+.div6 {
+  grid-area: 3 / 3 / 4 / 4;
+  width: 100%;
+  height: auto;
+  background-color: var(--grey);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profil-picture {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-title {
+  color: var(--white);
+  font-family: "League Gothic", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.profile-description,
+.thanks-description {
+  color: #96a0aa;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 12px;
+}
+
+.profile-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-links a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: "League Gothic", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.presentation-title {
+  color: var(--white);
+  font-family: League Gothic;
+  font-size: 64px;
+  text-transform: uppercase;
+}
+
+.presentation-description {
+  color: #96a0aa;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 16px;
+}
+
+.about-title,
+.hobbies-title {
+  color: var(--white);
+  font-family: League Gothic;
+  font-size: 48px;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.about-description {
+  color: var(--white);
+  font-family: "Inter Tight", sans-serif;
+  font-size: 16px;
+}
+
+.hobby-item {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  font-family: "Inter Tight", sans-serif;
+  margin-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.thanks-title {
+  color: var(--white);
+  font-family: League Gothic;
+  font-size: 64px;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.cl-effect-5 a {
+  overflow: hidden;
+  padding: 0 4px;
+  height: 1em;
+}
+
+.cl-effect-5 a span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.cl-effect-5 a span::before {
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  transform: translate3d(0, 0, 0);
+}
+
+.cl-effect-5 a:hover span,
+.cl-effect-5 a:focus span {
+  transform: translateY(-100%);
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  margin: 15px 25px;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  font-size: 1.35em;
+}
+
+a:hover,
+a:focus {
+  outline: none;
+}
+
+.cl-effect-5 a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: "League Gothic", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+}
